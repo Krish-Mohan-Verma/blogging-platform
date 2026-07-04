@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>Login</h2>
+    
+    <!-- This form submits to /login by default in Spring Security -->
+    <form th:action="@{/login}" method="post">
+        
+        <!-- Spring Security expects parameters named 'username' and 'password' -->
+        <div>
+            <label>Username:</label>
+            <input type="text" name="username" required />
+        </div>
+        
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" required />
+        </div>
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+</body>
+</html>
