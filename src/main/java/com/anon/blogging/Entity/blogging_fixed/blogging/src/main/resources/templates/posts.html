@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Blogs</title>
+</head>
+<body>
+    <h1>All Blogs</h1>
+
+    <div th:if="${#lists.isEmpty(posts)}">
+        <p>No blogs yet. Be the first to write one!</p>
+    </div>
+
+    <div th:each="post : ${posts}">
+        <h3>
+            <a th:href="@{'/posts/' + ${post.id}}" th:text="${post.title}">Post Title</a>
+        </h3>
+        <p th:text="${post.user.username}">author</p>
+        <hr>
+    </div>
+
+    <br>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
