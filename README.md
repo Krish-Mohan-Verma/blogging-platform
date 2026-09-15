@@ -15,7 +15,7 @@ A full-stack blogging web application built with Spring Boot. Users can register
 - **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA
 - **Templating:** Thymeleaf (server-rendered HTML)
 - **Database:** MySQL
-- **Build tool:** Maven
+- **Build tool:** Mavenn
 
 ## Project Structure
 
@@ -31,17 +31,20 @@ src/main/java/com/anon/blogging/
 ## Setup
 
 1. Create a MySQL database:
+
    ```sql
    CREATE DATABASE blogging;
    ```
 
 2. Set your database credentials as environment variables (or edit `application.properties` directly):
+
    ```
    DB_USERNAME=your_mysql_username
    DB_PASSWORD=your_mysql_password
    ```
 
 3. Run the app:
+
    ```bash
    ./mvnw spring-boot:run
    ```
