@@ -15,7 +15,7 @@ A full-stack blogging web application built with Spring Boot. Users can register
 - **Backend:** Java, Spring Boot, Spring Security, Spring Data JPA
 - **Templating:** Thymeleaf (server-rendered HTML)
 - **Database:** MySQL
-- **Build tool:** Maven
+- **Build tool:**
 
 ## Project Structure
 
